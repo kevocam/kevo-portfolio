@@ -45,8 +45,8 @@ const Experience = () => {
           <h2>Mi experiencia en Dau Holding</h2>
           <p>
             Junto al equipo de diseño desarrollamos una plataforma para
-            desarrollar el "II Congreso Internacional de Logoterapia Lima Perú -
-            2021". Contamos con más de 50 expositores, más de 300 alumnos, y 3
+            desarrollar el II Congreso Internacional de Logoterapia Lima Perú -
+            2021. Contamos con más de 50 expositores, más de 300 alumnos, y 3
             salas habilitadas para 3 días de evento.
           </p>
           <br />

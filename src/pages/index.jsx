@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 import Portfolio from "../components/Portfolio";
@@ -11,14 +11,11 @@ import Hero from "../components/Hero";
 import "../style/style.scss";
 import { Helmet } from "react-helmet";
 
-const index = () => {
+const Index = () => {
   const [theme, setTheme] = useState(false);
   const onChangeTheme = (item) => {
     setTheme(item);
   };
-  useEffect(() => {
-    console.log("themaaa:", theme);
-  }, [theme]);
 
   return (
     <div className={`theme  ${theme ? "dark-theme" : "light-theme"}`}>
@@ -50,4 +47,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

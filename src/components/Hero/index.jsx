@@ -19,7 +19,7 @@ function Hero({ theme }) {
     <section className="hero">
       <div className="hero__content">
         <p className="hero__content--hi">
-          Hi <span className="hero__content--hand">👋</span>, I'm
+          Hi <span className="hero__content--hand">👋</span>, {"I'm"}
         </p>
         <div className="hero__content--title">
           <h2>FrontEnd Developer</h2>

@@ -4,8 +4,7 @@ import "./style.scss";
 import kevo from "../../assets/kevin_camargo.png";
 import hacktziLogo from "../../assets/hacktzi.png";
 import mercadopagocertificado from "../../assets/mercadopagocertificado.png";
-import { Image } from "antd";
-
+import Image from "next/image";
 function About() {
   return (
     <div className="about">
@@ -57,7 +56,11 @@ function About() {
       </div>
       <div className="about__primes">
         <p className="about__primes--badge">
-          <img width="300px" src={mercadopagocertificado.src} alt="" />
+          <Image
+            width="300px"
+            src={mercadopagocertificado.src}
+            alt="certificado "
+          />
           Mercado Pago - Programador certificado
         </p>
 
