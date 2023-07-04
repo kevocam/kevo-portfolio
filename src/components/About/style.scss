@@ -1,0 +1,67 @@
+@import "../../style/style.scss";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--fuente-principal);
+  padding: 8px;
+  &__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: opacity(190%);
+    img {
+      width: 200px;
+      border-radius: 8px;
+    }
+  }
+  &__me {
+    font-size: 2.2rem;
+    padding: 4px;
+    color: var(--bg-color);
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      max-width: 1100px;
+    }
+  }
+  &__primes {
+    font-size: 1.8rem;
+    font-family: var(--fuente-principal);
+    width: 100%;
+    &--badge {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        padding-right: 20px;
+      }
+    }
+    ul {
+      text-align: center;
+      li {
+        margin: 12px 0px;
+
+        img {
+          filter: opacity(80%);
+          width: 197px;
+          transform: scale(1.2);
+          background-color: white;
+          border-radius: 12px 0px 0px 12px;
+        }
+        p {
+          opacity: 0.8;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          font-weight: 600;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}

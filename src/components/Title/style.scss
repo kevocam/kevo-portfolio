@@ -1,0 +1,29 @@
+@import "../../style/style.scss";
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0px;
+  &__lineAfter {
+    height: 1px;
+    background-color: var(--colorPrimary);
+    display: inline;
+    width: 20%;
+  }
+  &__text {
+    margin: 0px 32px;
+    white-space: nowrap;
+    font-size: 2.5rem;
+    @media (min-width: 700px) {
+      font-size: 3rem;
+    }
+  }
+  &__lineBefore {
+    height: 1px;
+    background-color: var(--colorPrimary);
+    display: inline;
+    width: 100%;
+  }
+}
