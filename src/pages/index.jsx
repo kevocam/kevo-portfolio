@@ -12,7 +12,7 @@ import Contact from "../components/Contact";
 import "../style/style.scss";
 import { Helmet } from "react-helmet";
 
-const index = () => {
+const Index = () => {
   const [theme, setTheme] = useState(false);
   const onChangeTheme = (item) => {
     setTheme(item);
@@ -49,4 +49,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
