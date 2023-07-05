@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Image } from "antd";
 import "./style.scss";
 
@@ -21,13 +22,14 @@ function Card(props) {
           preview={{ visible: false }}
           src={props.cover}
           onClick={() => setVisible(true)}
+          alt={props.stack}
         />
         <div style={{ display: "none" }}>
           <Image.PreviewGroup
             preview={{ visible, onVisibleChange: (vis) => setVisible(vis) }}
           >
             {imgs.map((item, index) => (
-              <Image key={index} src={item} />
+              <Image key={index} src={item.src} alt={item.alt} />
             ))}
           </Image.PreviewGroup>
         </div>

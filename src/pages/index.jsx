@@ -8,10 +8,11 @@ import Title from "../components/Title";
 import Footer from "../components/Footer";
 import Tecnologies from "../components/Tecnologies";
 import Hero from "../components/Hero";
+import Contact from "../components/Contact";
 import "../style/style.scss";
 import { Helmet } from "react-helmet";
 
-const Index = () => {
+const index = () => {
   const [theme, setTheme] = useState(false);
   const onChangeTheme = (item) => {
     setTheme(item);
@@ -42,9 +43,10 @@ const Index = () => {
       <Title title="Technologies " />
       <Tecnologies />
       <Title title="Let's do it?" />
+
       <Footer />
     </div>
   );
 };
 
-export default Index;
+export default index;

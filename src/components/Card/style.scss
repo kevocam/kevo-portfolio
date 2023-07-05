@@ -1,8 +1,6 @@
 @import "../../style/style.scss";
 
 .card {
-  /*  width: 400px;
-    height: 460px; */
   border: 2px dashed var(--colorPrimary);
   padding: 12px;
   display: flex;
@@ -31,15 +29,22 @@
   &__content {
     &--title {
       text-align: center;
+      font-size: 1.5rem;
     }
     &--tech {
       width: 100%;
+      font-size: 1.6rem;
       ul {
         display: flex;
         justify-content: space-around;
 
         flex-wrap: wrap;
       }
+    }
+    &--content {
+      padding-top: 10px;
+      font-size: 1.5rem;
+      margin: 0 auto;
     }
   }
   &__buttons {
@@ -50,7 +55,7 @@
       border: 2px solid var(--colorPrimary);
       padding: 8px;
       border-radius: 12px;
-      background-color: #03408cbf;
+      background-color: white;
       font-size: 1.8rem;
       &:hover {
         background-color: var(--colorPrimary);

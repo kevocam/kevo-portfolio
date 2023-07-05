@@ -4,9 +4,8 @@ import developerLigth from "../../assets/developerLigth.svg";
 import developerNigth from "../../assets/developerNigth.svg";
 import { motion } from "framer-motion";
 import "./style.scss";
-
+import Image from "next/image";
 function Hero({ theme }) {
-  console.log("theme;", theme);
   let imgDeveloper = developerLigth;
   let colorText = theme ? "#b1bfc9" : "#0669f7";
   if (theme) {
@@ -26,14 +25,18 @@ function Hero({ theme }) {
         </div>
         <p className="hero__content--call">and make amazing webs!</p>
         <p className="hero__content--description">
-          Front end developer con más de 2 años de experiencia desarrollando
-          productos digitales con JavaScript, VueJs, ReactJs y Laravel.
+          frontend con más de 4 años de experiencia en la creación de sitios web
+          y aplicaciones utilizando tecnologías como JavaScript, React.js,
+          Vue.js y Laravel. Me apasiona el desarrollo web y me especializo en
+          crear experiencias interactivas y atractivas para los usuarios.
         </p>
       </div>
-      <img
+      <Image
+        width="500"
+        height="500"
         src={imgDeveloper.src}
         className="slide-fwd-center hero__img"
-        alt="developer web"
+        alt="developer web, programador web "
       />
     </section>
   );

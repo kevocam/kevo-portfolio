@@ -28,6 +28,11 @@ html {
 .theme {
   scroll-behavior: smooth;
   font-family: var(--fuente-principal);
+
+  @media (max-width: 768px) {
+    width: 90%;
+    margin: 0 auto;
+  }
   &__switch {
     /*  position: absolute !important;
         right: 16px;

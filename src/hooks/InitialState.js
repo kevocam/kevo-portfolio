@@ -1,17 +1,23 @@
 const InitialState = [
   {
     id: 1,
-    project: "TodoReact - gestión de tareas",
+    project: "TodoReact - Gestión de tareas",
     cover:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/FireShot%20Capture%20015%20-%20React%20App%20-%20localhost.png?alt=media&token=bab643fc-3bcd-4ff1-a720-eafd07ce4384",
     description:
-      "Gestiona tus tareas del día, márcalas como completadas, elimina y busca tus TODOs. Como programador web frontend en Perú, he utilizado React y Sass para desarrollar esta aplicación de gestión de tareas. ¡Explora el proyecto en línea ahora!",
+      "Gestiona tus tareas diarias, marca las completadas, elimina y busca tus tareas. Como programador web frontend en Perú, he utilizado React y Sass para desarrollar esta aplicación de gestión de tareas. Explora el proyecto en línea ahora.",
     stack: ["React", "Sass"],
     github: "https://github.com/kevocam/TodoReact",
     online: "https://todoreact-kevo.netlify.app/",
     images: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/FireShot%20Capture%20015%20-%20React%20App%20-%20localhost.png?alt=media&token=bab643fc-3bcd-4ff1-a720-eafd07ce4384",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/FireShot%20Capture%20017%20-%20React%20App%20-%20localhost.png?alt=media&token=5c191f9c-a43a-4c9b-a3b6-cc5e68cd5d9a",
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/FireShot%20Capture%20015%20-%20React%20App%20-%20localhost.png?alt=media&token=bab643fc-3bcd-4ff1-a720-eafd07ce4384",
+        alt: "Captura de pantalla de la aplicación TodoReact",
+      },
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/FireShot%20Capture%20017%20-%20React%20App%20-%20localhost.png?alt=media&token=5c191f9c-a43a-4c9b-a3b6-cc5e68cd5d9a",
+        alt: "Captura de pantalla de la aplicación TodoReact",
+      },
     ],
   },
   {
@@ -25,8 +31,14 @@ const InitialState = [
     github: "https://github.com/kevocam/cotiseguro",
     online: "https://cotiseguros-kevo.netlify.app/",
     images: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/seguro4.png?alt=media&token=e32f26ce-0e9c-4b9e-9f95-703e684744e5",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/seguro1.png?alt=media&token=c01aacc2-c20b-4a6b-b8a2-11015d766706",
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/seguro4.png?alt=media&token=e32f26ce-0e9c-4b9e-9f95-703e684744e5",
+        alt: "Captura de pantalla de la aplicación Pasarela para seguro de vida",
+      },
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/seguro1.png?alt=media&token=c01aacc2-c20b-4a6b-b8a2-11015d766706",
+        alt: "Captura de pantalla de la aplicación Pasarela para seguro de vida",
+      },
     ],
   },
   {
@@ -35,13 +47,19 @@ const InitialState = [
     cover:
       "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/cover_pokemon.png?alt=media&token=c6e9834a-34bd-4721-af4d-540530e88704",
     description:
-      "Muestra todos los poquemones, agregalos a tu Pokedex y comparte los skills de cada Pokemon. Como desarrollador web frontend en Perú, he utilizado Vue.js, Sass, Vue Router y Vuex para crear esta aplicación. ¡Explora la Pokedex en línea y descubre todos los detalles!",
+      "Muestra todos los Pokémon, agrégalos a tu Pokédex y comparte los detalles de cada Pokémon. Como desarrollador web frontend en Perú, he utilizado Vue.js, Sass, Vue Router y Vuex para crear esta aplicación. Explora la Pokédex en línea y descubre todos los detalles.",
     stack: ["VueJs", "Sass", "VueRouter", "Vuex"],
     online: "https://pokedexvuejsapp.netlify.app/#/",
     github: "https://github.com/kevocam/pokedex",
     images: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/pokedex1.png?alt=media&token=1c2ee9b3-6365-40c8-9db6-4760d4f2e027",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/pokedex2.png?alt=media&token=556c82e9-8366-4877-943f-f25e897b2069",
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/pokedex1.png?alt=media&token=1c2ee9b3-6365-40c8-9db6-4760d4f2e027",
+        alt: "Captura de pantalla de la aplicación Vue Pokedex",
+      },
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/pokedex2.png?alt=media&token=556c82e9-8366-4877-943f-f25e897b2069",
+        alt: "Captura de pantalla de la aplicación Vue Pokedex",
+      },
     ],
   },
   {
@@ -55,9 +73,18 @@ const InitialState = [
     github: "https://github.com/kevocam/criptomercado",
     stack: ["VueJs", "API", "Sass"],
     images: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/criptomercado3.png?alt=media&token=780cd9f8-122b-47c5-9bf3-abde87beb954",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/criptomercado2.png?alt=media&token=b778a1da-e94c-477a-b184-408d22787ea5",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/criptomercado1.png?alt=media&token=3cb3c220-b35d-4fc3-84bc-6d120e4d290b",
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/criptomercado3.png?alt=media&token=780cd9f8-122b-47c5-9bf3-abde87beb954",
+        alt: "Captura de pantalla de la aplicación Criptomercado VueJS",
+      },
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/criptomercado2.png?alt=media&token=b778a1da-e94c-477a-b184-408d22787ea5",
+        alt: "Captura de pantalla de la aplicación Criptomercado VueJS",
+      },
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/criptomercado1.png?alt=media&token=3cb3c220-b35d-4fc3-84bc-6d120e4d290b",
+        alt: "Captura de pantalla de la aplicación Criptomercado VueJS",
+      },
     ],
   },
   {
@@ -70,8 +97,14 @@ const InitialState = [
     stack: ["Laravel", "SaSS", "Livewire"],
     online: "https://whereismymoney.site/",
     images: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/whereismymoney2.png?alt=media&token=cf9974c5-0a8d-444a-bc54-8304869f5514",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/whereismymoney1.png?alt=media&token=8006a604-273a-480f-b65b-414a8ef1936b",
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/whereismymoney2.png?alt=media&token=cf9974c5-0a8d-444a-bc54-8304869f5514",
+        alt: "Captura de pantalla de la aplicación Where is my money?",
+      },
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/whereismymoney1.png?alt=media&token=8006a604-273a-480f-b65b-414a8ef1936b",
+        alt: "Captura de pantalla de la aplicación Where is my money?",
+      },
     ],
   },
   {
@@ -83,11 +116,26 @@ const InitialState = [
       "Junto al equipo de Diseño, creamos un sistema para transmitir el V congreso de Logoterapia y Tanatología Lima - 2021. Como desarrollador web frontend en Perú, he utilizado Laravel, Livewire, Webpack y Sass para desarrollar este proyecto. Explora las imágenes y descubre más detalles sobre el congreso Dau - Holding.",
     stack: ["Laravel", "Livewire", "Webpack", "Sass"],
     images: [
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/congresodau5.png?alt=media&token=e82c6ee2-aa29-4557-a72e-6ec14ad30af8",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/congresodau4.png?alt=media&token=fc77fa96-8405-4360-bdad-0d043e125320",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/congresodau3.png?alt=media&token=71b5005a-53da-45e4-b20c-d98182d68c79",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/congresodau1.png?alt=media&token=b10d470d-8a85-4da1-a483-3305daa26103",
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/congresodau2.png?alt=media&token=395f144a-4977-47f6-995d-a1d1691954e4",
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/congresodau5.png?alt=media&token=e82c6ee2-aa29-4557-a72e-6ec14ad30af8",
+        alt: "Captura de pantalla de la aplicación Web para congreso Dau - Holding",
+      },
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/congresodau4.png?alt=media&token=fc77fa96-8405-4360-bdad-0d043e125320",
+        alt: "Captura de pantalla de la aplicación Web para congreso Dau - Holding",
+      },
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/congresodau3.png?alt=media&token=71b5005a-53da-45e4-b20c-d98182d68c79",
+        alt: "Captura de pantalla de la aplicación Web para congreso Dau - Holding",
+      },
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/congresodau1.png?alt=media&token=b10d470d-8a85-4da1-a483-3305daa26103",
+        alt: "Captura de pantalla de la aplicación Web para congreso Dau - Holding",
+      },
+      {
+        src: "https://firebasestorage.googleapis.com/v0/b/portfolio-b1763.appspot.com/o/congresodau2.png?alt=media&token=395f144a-4977-47f6-995d-a1d1691954e4",
+        alt: "Captura de pantalla de la aplicación Web para congreso Dau - Holding",
+      },
     ],
   },
 ];
