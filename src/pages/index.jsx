@@ -27,6 +27,10 @@ const Index = () => {
           name="description"
           content="🚀🚀🚀 I'm Albert Kevin Camargo Barreda Front end Developer and this is my portafolio. I love JavaScript, ReactJs, VuejS, Laravel"
         />
+        <meta
+          name="google-site-verification"
+          content="DIeMLt1q07BpoRydeD0fBiWPcIVSu2KZz_WYiNvfyIQ"
+        />
       </Helmet>
       <Head>
         <title>Kevin Camargo Barreda</title>
