@@ -22,9 +22,9 @@ const Home = () => {
     const currentTime = new Date();
     const hour = currentTime.getHours();
     const minutes = currentTime.getMinutes();
-    const isDarkMode = hour > 18;
+    const isDarkMode = hour > 16;
 
-    setTheme(!isDarkMode);
+    setTheme(isDarkMode);
 
     setBanner(`It's:${hour} : ${minutes}`);
     return hour;
