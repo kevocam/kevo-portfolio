@@ -60,9 +60,7 @@ function Header({ onChange, banner, bannerTheme }) {
 
       <h1>Kevin Camargo</h1>
 
-      <span>
-        {banner} - {bannerTheme}
-      </span>
+      <span>{banner}</span>
 
       <Switch
         className="fade-in header__toggle"

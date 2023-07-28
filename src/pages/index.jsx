@@ -8,11 +8,11 @@ import Title from "../components/Title";
 import Footer from "../components/Footer";
 import Tecnologies from "../components/Tecnologies";
 import Hero from "../components/Hero";
-import Contact from "../components/Contact";
+import icon from "../assets/kevincamargo.svg";
 import "../style/style.scss";
 import { Helmet } from "react-helmet";
 
-const index = () => {
+const Home = () => {
   const [theme, setTheme] = useState(false);
   const [time, setTime] = useState("");
   const [banner, setBanner] = useState("");
@@ -24,7 +24,7 @@ const index = () => {
     const minutes = currentTime.getMinutes();
     const isDarkMode = hour > 18;
 
-    setTheme(isDarkMode);
+    setTheme(!isDarkMode);
 
     setBanner(`It's:${hour} : ${minutes}`);
     return hour;
@@ -77,4 +77,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Home;
