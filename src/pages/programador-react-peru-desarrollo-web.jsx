@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-import Portfolio from "../../components/Portfolio";
-import "../../style/style.scss";
+import Portfolio from "../components/Portfolio";
+import "../style/style.scss";
 import "./style.scss";
 
 const ProgramadorReactPeruDesarrolloWeb = () => {
