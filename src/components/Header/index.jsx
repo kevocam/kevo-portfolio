@@ -3,7 +3,7 @@ import "./style.scss";
 import { motion } from "framer-motion";
 import { Switch } from "antd";
 
-function Header({ onChange }) {
+function Header({ onChange, banner, bannerTheme }) {
   const [show, setShow] = React.useState(true);
   let [theme, setTheme] = React.useState(true);
 
@@ -59,6 +59,10 @@ function Header({ onChange }) {
       </motion.svg>
 
       <h1>Kevin Camargo</h1>
+
+      <span>
+        {banner} - {bannerTheme}
+      </span>
 
       <Switch
         className="fade-in header__toggle"
