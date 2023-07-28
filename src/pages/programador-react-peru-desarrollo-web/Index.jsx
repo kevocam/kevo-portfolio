@@ -5,7 +5,7 @@ import Portfolio from "../../components/Portfolio";
 import "../../style/style.scss";
 import "./style.scss";
 
-const Index = () => {
+const ProgramadorReactPeruDesarrolloWeb = () => {
   const [theme, setTheme] = useState(true);
 
   const onChangeTheme = (item) => {
@@ -199,4 +199,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default ProgramadorReactPeruDesarrolloWeb;
