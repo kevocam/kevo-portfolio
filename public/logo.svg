@@ -1,0 +1,38 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background chip shape -->
+  <rect x="8" y="8" width="48" height="48" rx="8" fill="#1a1a24" stroke="url(#grad)" stroke-width="2"/>
+  
+  <!-- Circuit lines -->
+  <path d="M16 24 L24 24 L28 28 L36 28" stroke="#6366f1" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <path d="M16 40 L24 40 L28 36 L36 36 L40 40" stroke="#6366f1" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Left bracket -->
+  <text x="10" y="42" font-family="monospace" font-size="24" font-weight="bold" fill="url(#grad)">&lt;</text>
+  
+  <!-- KC text -->
+  <text x="20" y="42" font-family="system-ui, sans-serif" font-size="16" font-weight="800" fill="#ffffff">KC</text>
+  
+  <!-- Right bracket -->
+  <text x="46" y="42" font-family="monospace" font-size="24" font-weight="bold" fill="url(#grad)">/&gt;</text>
+  
+  <!-- AI chip indicator -->
+  <circle cx="52" cy="12" r="8" fill="#1a1a24" stroke="url(#grad)" stroke-width="1.5"/>
+  <circle cx="52" cy="12" r="4" fill="url(#chip)"/>
+  
+  <!-- Small dots on chip -->
+  <circle cx="52" cy="6" r="1" fill="#6366f1"/>
+  <circle cx="58" cy="12" r="1" fill="#6366f1"/>
+  <circle cx="52" cy="18" r="1" fill="#6366f1"/>
+  <circle cx="46" cy="12" r="1" fill="#6366f1"/>
+</svg>
