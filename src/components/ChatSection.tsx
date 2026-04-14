@@ -7,7 +7,7 @@ type Message = { role: 'user' | 'assistant'; content: string }
 
 export default function ChatSection() {
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'assistant', content: "Hi! I'm Kevin's AI assistant. Ask me about his experience, skills, where he studied, his favorite dishes... I'm here to help! 😊" }
+    { role: 'assistant', content: "¡Hola! Soy el asistente de IA de Kevin. Puedes preguntarme sobre su experiencia, habilidades, dónde estudió, qué platos le gustan... ¡Estoy aquí para ayudarte! 😊" }
   ])
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
