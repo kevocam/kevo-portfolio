@@ -16,7 +16,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
         >
           <span className={styles.dot} />
-          Open to AI-focused roles
+          Available for freelance WordPress projects
         </motion.div>
 
         <motion.h1

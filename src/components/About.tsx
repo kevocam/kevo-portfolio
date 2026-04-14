@@ -25,19 +25,19 @@ export default function About() {
         <div className={styles.content}>
           <ScrollReveal delay={0.1} className={styles.text}>
             <p>
-              I&apos;m Albert Kevin Camargo Barreda, a Frontend Developer based in Peru with 
-              6+ years of experience building web applications that scale. Currently at Globant 
-              for 4.5 years, working on enterprise-level solutions.
+              Frontend Developer & AI Builder with 6+ years of experience crafting high-performance 
+              web applications across FinTech, Healthcare, and Entertainment. Currently at Globant 
+              (4.5 years), delivering enterprise-level solutions with Next.js, SSR, and AI integration.
             </p>
             <p>
-              My differentiator: I&apos;m expanding my expertise into AI. I&apos;ve built platforms 
-              with AI agents that generate content automatically (eCandelariaCentral) and 
-              develop using tools like Antigravity IDE with GPT integration.
+              Strong command of JavaScript, ReactJS, VueJS, PHP, and Laravel, with availability 
+              for freelance WordPress projects — custom themes, plugins, and marketing-focused 
+              websites. Experienced in technical SEO, Core Web Vitals optimization, Google 
+              Analytics, and CMS integrations.
             </p>
             <p>
-              Passionate about web performance, I&apos;ve achieved 1000+ concurrent users with 
-              optimal load times. I believe in clean, maintainable code and creating user 
-              experiences that make a difference.
+              Comfortable in agile environments and quick to adapt to new clients and projects. 
+              Passionate about clean, maintainable code and creating user experiences that make a difference.
             </p>
 
             <div className={styles.certifications}>

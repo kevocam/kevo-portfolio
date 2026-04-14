@@ -60,9 +60,8 @@ export default function Contact() {
         <div className={styles.content}>
           <ScrollReveal delay={0.1} className={styles.info}>
             <p className={styles.description}>
-              Looking for: Frontend roles with AI focus, freelance B2B projects, 
-              or challenging opportunities. Open to remote work globally. 
-              Let&apos;s build something amazing together!
+              Open to: Frontend roles with AI focus, freelance WordPress projects for marketing 
+              agencies, and B2B remote opportunities. Let&apos;s build something amazing together!
             </p>
 
             <div className={styles.contactInfo}>
