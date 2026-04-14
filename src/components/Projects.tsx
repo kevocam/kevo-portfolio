@@ -8,7 +8,7 @@ import styles from './Projects.module.css'
 const projects = [
   {
     title: 'Candelaria Central',
-    description: 'Web para la Festividad de la Virgen de la Candelaria (Puno, Peru). Desarrollo en 3 dias para el dia principal. Posiciono #1-3 en Google para "puntajes candelaria 2026" en 1 semana.',
+    description: 'Official website for the Festividad de la Virgen de la Candelaria (Puno, Peru). Built in 3 days for the main day. Ranked #1-3 on Google for "puntajes candelaria 2026" within 1 week.',
     tech: ['Next.js SSR', 'Supabase', 'GPT', 'SEO', 'Antigravity IDE'],
     link: 'https://candelariacentral.com',
     repo: '#',
@@ -21,13 +21,14 @@ const projects = [
     images: ['/images/candelaria-1.png', '/images/candelaria-2.png', '/images/candelaria-3.png'],
     pagespeed: ['/images/pagespeed-1.png', '/images/pagespeed-2.png'],
   },
+
   {
-    title: 'eCandelaria Central',
-    description: 'Plataforma de contenido automatico con IA. Agentes que generan posts, gestionan redes sociales y analizan engagement. Desarrollo con Antigravity IDE.',
-    tech: ['Next.js', 'Supabase', 'GPT API', 'n8n', 'AI Agents'],
+    title: 'WordPress Freelance Projects',
+    description: 'Custom WordPress development for marketing agencies — themes, plugins, landing pages, and SEO-optimized sites.',
+    tech: ['WordPress', 'PHP', 'Elementor', 'WooCommerce', 'SEO'],
     link: '#',
     repo: '#',
-    featured: true,
+    featured: false,
     stats: null,
     images: [],
     pagespeed: [],
@@ -111,7 +112,7 @@ export default function Projects() {
                 </div>
                 <h3 className={styles.cardTitle}>{project.title}</h3>
                 <p className={styles.cardDescription}>{project.description}</p>
-                
+
                 {project.stats && (
                   <div className={styles.stats}>
                     <div className={styles.stat}>

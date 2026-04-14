@@ -18,8 +18,8 @@ const skillCategories = [
     skills: ['SSR', 'Mobile-first', 'PWA', 'Core Web Vitals', 'Microfrontends', 'Design Systems'],
   },
   {
-    title: 'Backend',
-    skills: ['Node.js', 'Laravel', 'PHP', 'Supabase', 'MySQL', 'Firebase'],
+    title: 'Backend / CMS',
+    skills: ['Node.js', 'Laravel', 'PHP', 'WordPress', 'Supabase', 'MySQL', 'Firebase'],
   },
   {
     title: 'Tooling',
