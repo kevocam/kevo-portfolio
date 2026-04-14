@@ -11,7 +11,7 @@ const skillCategories = [
   },
   {
     title: 'AI & Automation',
-    skills: ['OpenAI API', 'GPT Integration', 'n8n', 'AI Agents', 'Antigravity IDE', 'ChatGPT'],
+    skills: ['OpenAI API', 'GPT Integration', 'OpenCode', 'n8n', 'AI Agents', 'Antigravity IDE', 'ChatGPT'],
   },
   {
     title: 'Performance',

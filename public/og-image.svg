@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#1a1a24"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="chip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#6366f1" stroke-width="0.3" opacity="0.2"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <!-- Logo chip -->
+  <g transform="translate(100, 215)">
+    <rect x="0" y="0" width="200" height="200" rx="24" fill="#1a1a24" stroke="url(#grad)" stroke-width="4"/>
+    <path d="M40 80 L80 80 L96 96 L136 96" stroke="#6366f1" stroke-width="4" fill="none" opacity="0.6"/>
+    <path d="M40 120 L80 120 L96 104 L136 104 L160 120" stroke="#6366f1" stroke-width="4" fill="none" opacity="0.6"/>
+    <text x="30" y="150" font-family="monospace" font-size="48" font-weight="bold" fill="url(#grad)">&lt;</text>
+    <text x="70" y="150" font-family="system-ui, sans-serif" font-size="36" font-weight="800" fill="#ffffff">KC</text>
+    <text x="150" y="150" font-family="monospace" font-size="48" font-weight="bold" fill="url(#grad)">/&gt;</text>
+    <circle cx="170" cy="40" r="24" fill="#1a1a24" stroke="url(#grad)" stroke-width="3"/>
+    <circle cx="170" cy="40" r="12" fill="url(#chip)"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="350" y="280" font-family="system-ui, sans-serif" font-size="64" font-weight="700" fill="#ffffff">Kevin Camargo</text>
+  <text x="350" y="340" font-family="system-ui, sans-serif" font-size="36" font-weight="500" fill="#6366f1">Frontend Developer &amp; AI Builder</text>
+  <text x="350" y="390" font-family="system-ui, sans-serif" font-size="24" font-weight="400" fill="#a0a0b0">6+ years building web apps that scale</text>
+  
+  <!-- Divider -->
+  <line x1="350" y1="420" x2="1100" y2="420" stroke="#6366f1" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Keywords -->
+  <text x="350" y="460" font-family="system-ui, sans-serif" font-size="20" fill="#a0a0b0">Next.js • React • TypeScript • VueJS • AI Integration</text>
+  
+  <!-- CTA -->
+  <rect x="350" y="490" width="250" height="50" rx="25" fill="url(#grad)"/>
+  <text x="475" y="522" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#ffffff" text-anchor="middle">View Portfolio →</text>
+</svg>

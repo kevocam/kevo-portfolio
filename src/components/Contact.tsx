@@ -43,10 +43,24 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus('sending')
-    setTimeout(() => {
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formState)
+      })
+
+      if (!res.ok) {
+        throw new Error('Failed to send')
+      }
+
       setStatus('sent')
       setFormState({ name: '', email: '', message: '' })
-    }, 1500)
+    } catch (error) {
+      setStatus('error')
+      setTimeout(() => setStatus('idle'), 3000)
+    }
   }
 
   return (
@@ -130,7 +144,7 @@ export default function Contact() {
               <motion.button
                 type="submit"
                 className={styles.submitBtn}
-                disabled={status === 'sending'}
+                disabled={status === 'sending' || status === 'error'}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
@@ -138,6 +152,8 @@ export default function Contact() {
                   <span className={styles.sending}>Sending...</span>
                 ) : status === 'sent' ? (
                   <span className={styles.sent}>Message Sent!</span>
+                ) : status === 'error' ? (
+                  <span className={styles.sent}>Try Again</span>
                 ) : (
                   <>
                     Send Message
