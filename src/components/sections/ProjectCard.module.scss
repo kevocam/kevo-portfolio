@@ -1,0 +1,167 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.sticker {
+  @include sticker;
+  position: absolute;
+  top: -18px;
+  left: 1.5rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 13px;
+}
+
+.cream {
+  background: $cream;
+}
+
+.muted {
+  color: $muted;
+}
+
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+// In-progress placeholder: dashed frame, muted copy.
+.wip {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+  border: 3px dashed $muted;
+
+  @include md {
+    grid-column: span 2 / span 2;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.wipBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.wipTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $muted;
+
+  @include md {
+    font-size: 32px;
+  }
+}
+
+.featured {
+  position: relative;
+  display: grid;
+  gap: 2.5rem;
+  padding: 1.5rem;
+  border: 3px solid $cream;
+
+  @include md {
+    grid-column: span 2 / span 2;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 2rem;
+  }
+}
+
+.featuredPink {
+  border-color: $pink;
+  box-shadow: 10px 10px 0 $pink;
+}
+
+.featuredBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.featuredTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+
+  @include md {
+    font-size: 3rem;
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border: 3px solid $cream;
+  transition:
+    translate 150ms,
+    border-color 150ms;
+
+  &:hover {
+    translate: 0 -2px;
+    border-color: $acid;
+  }
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.875rem;
+  font-weight: 400;
+  line-height: 1.05;
+  text-transform: uppercase;
+
+  @include md {
+    font-size: 2.25rem;
+  }
+}
+
+.cardText {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: $body;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  border: 2px solid $cream;
+  object-fit: cover;
+}
+
+.placeholder {
+  display: flex;
+  aspect-ratio: 16 / 10;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $cream;
+  background: repeating-linear-gradient(135deg, #1a1a1c 0 12px, $ink 12px 24px);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: $muted;
+}

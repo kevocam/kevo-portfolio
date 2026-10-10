@@ -1,31 +1,23 @@
-'use client'
+import { Hero } from '@/components/sections/Hero';
+import { Marquee } from '@/components/sections/Marquee';
+import { About } from '@/components/sections/About';
+import { Experience } from '@/components/sections/Experience';
+import { Projects } from '@/components/sections/Projects';
+import { Stack } from '@/components/sections/Stack';
+import { Chat } from '@/components/sections/Chat';
+import { Contact } from '@/components/sections/Contact';
 
-import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import About from '@/components/About'
-import Skills from '@/components/Skills'
-import ChatSection from '@/components/ChatSection'
-import TechStack from '@/components/TechStack/TechStack'
-import Projects from '@/components/Projects'
-import Experience from '@/components/Experience'
-import Contact from '@/components/Contact'
-import Footer from '@/components/Footer/Footer'
-import ChatWidget from '@/components/ChatWidget'
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <main>
-      <Header />
+    <>
       <Hero />
+      <Marquee />
       <About />
-      <Skills />
-      <ChatSection />
-      <TechStack />
-      <Projects />
       <Experience />
+      <Projects />
+      <Stack />
+      <Chat />
       <Contact />
-      <Footer />
-      <ChatWidget />
-    </main>
-  )
+    </>
+  );
 }

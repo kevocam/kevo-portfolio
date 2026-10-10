@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shard {
+  display: block;
+}
+
+.tri {
+  width: 36px;
+  height: 36px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+.square {
+  width: 28px;
+  height: 28px;
+}
+
+.circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+}

@@ -1,0 +1,34 @@
+@use 'variables' as *;
+
+// Background and text colour per tone. Used by content tones (pink | acid | lime | cyan).
+.bgPink {
+  background: $pink;
+}
+
+.bgAcid {
+  background: $acid;
+}
+
+.bgLime {
+  background: $lime;
+}
+
+.bgCyan {
+  background: $cyan;
+}
+
+.textPink {
+  color: $pink;
+}
+
+.textAcid {
+  color: $acid;
+}
+
+.textLime {
+  color: $lime;
+}
+
+.textCyan {
+  color: $cyan;
+}

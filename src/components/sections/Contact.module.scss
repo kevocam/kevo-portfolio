@@ -1,0 +1,110 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.contact {
+  scroll-margin-top: 6rem;
+  padding: 5rem 1rem 2.5rem;
+  background: $pink;
+  color: $ink;
+
+  @include md {
+    padding: 6rem 6rem 2.5rem;
+  }
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.label {
+  @include sticker;
+  align-self: flex-start;
+  background: $ink;
+  color: $pink;
+  transform: rotate(-2deg);
+}
+
+// Fluid size: "SOMETHING." must fit the viewport at every width (128px max on desktop).
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 9vw, 128px);
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.95;
+}
+
+.lede {
+  max-width: 46ch;
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.6;
+
+  @include md {
+    font-size: 21px;
+  }
+}
+
+.emailRow {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.75rem 0;
+  border-top: 3px solid $ink;
+  border-bottom: 3px solid $ink;
+
+  @include md {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.email {
+  flex-grow: 1;
+  overflow-wrap: anywhere;
+  font-family: var(--font-display);
+  font-size: 1.875rem;
+  line-height: 1;
+  color: $ink;
+
+  @include md {
+    font-size: 56px;
+  }
+
+  &:hover {
+    color: $ink;
+  }
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.link {
+  color: $ink;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+
+  &:hover {
+    color: $cream;
+  }
+}
+
+.soon {
+  opacity: 0.6;
+}

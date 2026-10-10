@@ -1,0 +1,28 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.75rem 1rem;
+  background: $ink;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: $muted;
+
+  @include md {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.top {
+  color: $acid;
+
+  &:hover {
+    color: $pink;
+  }
+}

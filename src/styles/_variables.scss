@@ -1,0 +1,17 @@
+// Design tokens (dark only). Imported by modules as SCSS values.
+// The CSS custom properties built from these live in app/globals.scss (:root), not here,
+// because :root is not allowed inside CSS Modules.
+
+$ink: #0b0b0c;
+$cream: #f5f1e8;
+$body: #e8e3d8;
+$muted: #b9b4a8;
+$line: #4a4740;
+$pink: #ff2e88;
+$acid: #c6ff00;
+$lime: #e2ea62;
+$cyan: #00e5ff;
+
+$max-width: 1248px;
+$header-height: 64px;
+$header-height-md: 76px;

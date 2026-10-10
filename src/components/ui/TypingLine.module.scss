@@ -1,0 +1,13 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.line {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: $acid;
+
+  @include md {
+    font-size: 1.125rem;
+  }
+}
