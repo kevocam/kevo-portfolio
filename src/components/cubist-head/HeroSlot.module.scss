@@ -1,0 +1,22 @@
+@use '../../styles/mixins' as *;
+
+.slot {
+  position: relative;
+  width: 300px;
+  height: 348px;
+
+  @include md {
+    width: 500px;
+    height: 580px;
+  }
+}
+
+// Mobile: the static head is scaled to 60%; desktop: 1:1.
+.staticHead {
+  transform-origin: top left;
+  transform: scale(0.6);
+
+  @include md {
+    transform: none;
+  }
+}

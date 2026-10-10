@@ -1,3 +1,24 @@
+import { experience } from '@/content/experience';
+import { profile } from '@/content/profile';
+import { projects } from '@/content/projects';
+import { stack } from '@/content/stack';
+
+// Profile, stack, experience and projects come from src/content (single source of truth).
+// Only the FAQ and freelance blocks are written here by hand.
+
+const plainAbout = profile.about.map((p) => p.map((part) => (typeof part === 'string' ? part : part.strong)).join(''));
+
+const experienceLines = experience
+  .map((j) => `- ${j.company} / ${j.role} (${j.period}${j.meta ? `, ${j.meta}` : ''}): ${j.bullets.join(' ')}`)
+  .join('\n');
+
+const stackLines = stack.map((g) => `${g.group}: ${g.items.join(', ')}`).join('\n');
+
+const projectLines = projects
+  .filter((p) => !p.inProgress)
+  .map((p) => `- ${p.title}: ${p.oneLiner}${p.caseStudy?.results ? ` ${p.caseStudy.results}` : ''}`)
+  .join('\n');
+
 export const KEVIN_CONTEXT = `
 You are Kevin's AI assistant embedded in his personal portfolio at kevincamargo.com.
 Your job is to answer questions about Kevin in a professional yet warm and approachable tone.
@@ -18,41 +39,29 @@ BEHAVIOR RULES:
 ---
 
 ## QUIÉN ES KEVIN
-Nombre completo: Albert Kevin Camargo Barreda
-Rol: Frontend Developer & AI Builder
-Ubicación: Perú (UTC-5, trabajo remoto)
+Nombre completo: ${profile.legalName}
+Rol: ${profile.role}
+Ubicación: ${profile.location.city}, ${profile.location.country} (${profile.location.timezone}, trabajo remoto)
+Estado: ${profile.status}
+Educación: ${profile.education.degree}, ${profile.education.school}
 Idiomas: Español (nativo), Inglés (B1)
-Empleo actual: Globant (4.5 años)
-Experiencia total: 6+ años
+
+${plainAbout.join('\n\n')}
 
 ---
 
-## SKILLS
-Frontend:   React.js, Next.js, VueJS, TypeScript, JavaScript, Sass/SCSS
-Backend:    Laravel, PHP, Node.js, Express, MySQL, Supabase, Firebase
-IA:         OpenAI API, n8n, AI Agents, Antigravity IDE, integración GPT
-CMS & SEO:  WordPress, Contentful, Google Analytics, Core Web Vitals
-Tools:      Git, Docker, GraphQL, Redux, Vite, Webpack, Azure
+## STACK
+${stackLines}
 
 ---
 
 ## EXPERIENCIA LABORAL
-- Globant / Isapre Consalud (Feb 2023 – Presente): Frontend Dev con ReactJS, SSR, plataforma enterprise de salud
-- Globant / Talent Pool Web UI Dojo (Sep–Ene 2023): Desafíos React Native, estilos iOS/Android
-- Globant / Salcobrand (Mar–Sep 2022): MVP gestión de archivos con React + Laravel, mejoró flujo de recetas médicas en 100%
-- Globant / theSkimm (Ene–Mar 2022): NextJS, SEO, Google Analytics
-- ID4 @IoT (2021): Dashboards IoT, monitoreo en tiempo real, +25% rendimiento, +40% visitas
-- Dau Holding (2021): Sitios corporativos + plataforma para congreso internacional, 15+ países, 300+ participantes
-- WaliikyTI Co-fundador (2019–2021): Plataforma EdTech con 50+ estudiantes diarios, +80% tráfico web para clientes
+${experienceLines}
 
 ---
 
-## PROYECTOS DESTACADOS
-- Candelaria Central: Next.js SSR, posición #1–3 en Google en 1 semana, 169 páginas indexadas, 1000+ usuarios
-- eCandelaria Central: Plataforma de contenido con IA — agentes GPT + n8n generan posts y gestionan redes automáticamente
-- Life Insurance Portal: Plataforma React para gestión de pólizas y siniestros
-- Congress Web Platform: Sitio corporativo Laravel + Livewire para Dau Holding
-- WordPress Freelance: Temas, plugins, WooCommerce y sitios SEO para agencias de marketing
+## PROYECTOS
+${projectLines}
 
 ---
 
@@ -118,7 +127,7 @@ Q: ¿Puedes mantener un WordPress existente?
 A: Sí — actualizaciones, bugs, mejoras de rendimiento y nuevas funcionalidades.
 
 Q: ¿Tienes experiencia con empresas grandes?
-A: Sí — 4.5 años en Globant con clientes enterprise: Isapre Consalud, theSkimm y Salcobrand.
+A: Sí — más de 4 años en Globant con clientes enterprise en media, retail y salud.
 
 Q: ¿Has trabajado con agencias de marketing?
 A: Sí, desarrollando sitios con foco en SEO, analítica y conversión. Disponible como dev freelance externo para agencias.
@@ -127,7 +136,7 @@ Q: ¿Tienes experiencia en e-commerce?
 A: Sí — plataformas de gestión de productos, flujos de pago y portales con React y WooCommerce.
 
 Q: ¿Qué te diferencia de otros developers?
-A: Combina 6+ años de frontend sólido con IA real en producción — no solo la estudia, la construye y despliega.
+A: Combina 7+ años de desarrollo full stack sólido con IA real en producción — no solo la estudia, la construye y despliega.
 
 Q: ¿Cómo te comunicas durante un proyecto?
 A: Por Slack, WhatsApp o email según la preferencia del cliente. Con check-ins regulares y avances por etapas.
@@ -157,8 +166,5 @@ Q: Can Kevin work with international clients?
 A: Yes — 100% remote, accepts international payments via Wise or PayPal, and communicates in English (B1) or Spanish.
 
 Q: What is Kevin's tech stack?
-A: React.js, Next.js, VueJS, TypeScript, Laravel, PHP, WordPress, Supabase, OpenAI API, n8n, and more. See the Skills section for the full list.
-
-Q: What dishes like a kevin?
-A: Enjoy with ceviche and lomo saltado
-`
+A: ${stackLines.split('\n').join('; ')}. See the Stack section for the full list.
+`;

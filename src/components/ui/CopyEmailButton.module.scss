@@ -1,0 +1,22 @@
+@use '../../styles/variables' as *;
+
+.button {
+  height: 3.5rem;
+  flex-shrink: 0;
+  padding: 0 1.5rem;
+  background: $ink;
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+  color: $acid;
+  box-shadow: 5px 5px 0 $cream;
+  transition:
+    translate 150ms,
+    box-shadow 150ms;
+  cursor: pointer;
+
+  &:hover {
+    translate: 2px 2px;
+    box-shadow: 3px 3px 0 $cream;
+  }
+}

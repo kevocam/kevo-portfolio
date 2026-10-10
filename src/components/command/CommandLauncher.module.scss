@@ -1,0 +1,35 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.button {
+  display: flex;
+  height: 2.75rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.75rem;
+  border: 2px solid $cream;
+  background: transparent;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: $cream;
+  cursor: pointer;
+  transition:
+    background-color 150ms,
+    color 150ms;
+
+  &:hover {
+    background: $cream;
+    color: $ink;
+  }
+}
+
+// "Menu" label is the mobile affordance: hidden from md up.
+.menuLabel {
+  @include md {
+    display: none;
+  }
+}
+
+.kbd {
+  font-family: var(--font-mono);
+}

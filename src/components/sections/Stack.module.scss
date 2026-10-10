@@ -1,0 +1,42 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border-top: 3px solid $cream;
+}
+
+.row {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+
+  @include md {
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 3rem;
+  }
+}
+
+.rowDashed {
+  border-bottom: 2px dashed $line;
+}
+
+.rowLast {
+  border-bottom: 3px solid $cream;
+}
+
+.group {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.items {
+  margin: 0;
+}

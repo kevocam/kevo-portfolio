@@ -1,0 +1,83 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
+
+.section {
+  padding: 4rem 1rem;
+
+  @include md {
+    padding: 6rem 6rem;
+  }
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 3rem;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  @include lg {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.badge {
+  @include sticker;
+  background: $pink;
+  transform: rotate(-2deg);
+}
+
+.title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 3.75rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 0.95;
+
+  @include md {
+    font-size: 112px;
+  }
+}
+
+.lead {
+  max-width: 36ch;
+  margin: 0;
+  font-size: 1.125rem;
+  color: $body;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.resumeLink {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+}
+
+.art {
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0;
+  overflow: hidden;
+}
+
+// Mobile: scaled to 60%; desktop: 90%.
+.artHead {
+  transform-origin: center;
+  transform: scale(0.6);
+
+  @include md {
+    transform: scale(0.9);
+  }
+}

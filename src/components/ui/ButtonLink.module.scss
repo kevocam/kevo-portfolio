@@ -1,0 +1,52 @@
+@use '../../styles/variables' as *;
+
+.button {
+  display: inline-flex;
+  height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1.75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  transition:
+    translate 150ms,
+    box-shadow 150ms,
+    background-color 150ms,
+    color 150ms;
+}
+
+.primary {
+  background: $pink;
+  color: $ink;
+  box-shadow: 6px 6px 0 $cream;
+
+  &:hover {
+    color: $ink;
+    translate: 2px 2px;
+    box-shadow: 4px 4px 0 $cream;
+  }
+}
+
+.acid {
+  background: $acid;
+  color: $ink;
+  box-shadow: 4px 4px 0 $pink;
+
+  &:hover {
+    color: $ink;
+    translate: 2px 2px;
+    box-shadow: 2px 2px 0 $pink;
+  }
+}
+
+.outline {
+  border: 2px solid $cream;
+  color: $cream;
+
+  &:hover {
+    background: $cream;
+    color: $ink;
+  }
+}
