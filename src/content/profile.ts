@@ -8,7 +8,7 @@ export const profile = {
   subtitle: 'Full Stack Engineer · Python, FastAPI, React & Next.js',
   tagline: 'building products with python, fastapi, react & llms',
   intro:
-    'I build web products end to end, from the API to the interface. 7+ years shipping software, 4+ of them at Globant for enterprise clients in media, retail and healthcare. Today I focus on Python backends, React frontends and bringing LLMs into real products.',
+    'I build web products end to end, from the API to the interface. 7+ years shipping software for enterprise clients in health insurance, retail and digital media, with React and Next.js on the frontend and Python/FastAPI and Node.js on the backend. Now going deeper into LLM integration with Python.',
   status: 'Open to conversations',
   location: { city: 'Lima', country: 'Peru', countryCode: 'PE', timezone: 'UTC-5' },
   email: 'hurkth@gmail.com',
@@ -27,30 +27,30 @@ export const profile = {
   aboutTitle: 'Code the next developer is glad to inherit.',
   about: [
     [
-      'For the last 4+ years at ',
+      'For almost five years at ',
       { strong: 'Globant', tone: 'lime' },
-      ", I've built large-scale platforms for enterprise clients in media, retail and healthcare: designing REST APIs with Node.js and SQL, building scalable frontends with React and Next.js, and shipping features with distributed teams across time zones.",
+      ", I've built web products for enterprise clients like Consalud, Salcobrand and theSkimm. Today I'm the only Globant engineer in a ~15-person multinational team building a self-service platform used by 450K+ health insurance members.",
     ],
     [
-      "I care about clean architecture, clear specs and code the next developer will be glad to inherit. The work I'm proudest of: introducing automated testing into a microfrontend architecture, with unit tests in Jest and end-to-end tests in Playwright. Production bugs dropped by 95% and releases became predictable.",
+      "I care about clean architecture, clear specs and code the next developer will be glad to inherit. The work I'm proudest of: introducing unit tests with Jest and end-to-end tests with Playwright into microfrontend repositories that had none. Bugs dropped by ~95%, and the mobile-first approach I pushed became the team standard.",
     ],
     [
       "My workflow is AI-native: I work with ",
       { strong: 'Claude Code and Codex', tone: 'acid' },
-      ' on top of Spec-Driven Development, writing the spec first and letting the tools accelerate the build. Lately I\'ve been running local LLMs and self-hosting AI agents, learning how to turn them into features people actually use.',
+      ' on top of Spec-Driven Development, writing the spec first and letting the tools accelerate the build. Right now I\'m going deeper into LLM integration with Python.',
     ],
     [
       'Outside my day job I co-founded ',
       { strong: 'Waliky TI', tone: 'pink' },
-      ", a software studio, and I build products for local businesses in Peru, like a patient records app for dental clinics. I've also mentored women starting in software through ",
+      ", a software studio, and I've also mentored women starting in software through ",
       { strong: 'Chicas Programadoras', tone: 'cyan' },
       '.',
     ],
   ] satisfies RichText[],
   stats: [
     { value: '7+', label: 'years building for the web', tone: 'pink', tilt: -2 },
-    { value: '95%', label: 'fewer production bugs after adding Jest + Playwright', tone: 'acid', tilt: 1.5 },
-    { value: '15+', label: "countries reached by products I've built", tone: 'lime', tilt: -1 },
+    { value: '~95%', label: 'fewer bugs after adding Jest + Playwright', tone: 'acid', tilt: 1.5 },
+    { value: '450K+', label: 'members using a platform I build', tone: 'lime', tilt: -1 },
   ] satisfies Array<{ value: string; label: string; tone: Tone; tilt: number }>,
   /** Used by JSON-LD (schema.org knowsAbout). */
   knowsAbout: [
@@ -66,6 +66,8 @@ export const profile = {
     'Playwright',
     'Jest',
     'Microfrontends',
+    'GraphQL',
+    'Supabase',
   ],
 } as const;
 
