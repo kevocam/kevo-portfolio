@@ -77,6 +77,46 @@
   list-style: disc;
 }
 
+.note {
+  margin: -0.5rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: $muted;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin: 0.25rem 0 0;
+  padding: 0 0 0 1.25rem;
+  list-style: none;
+  border-left: 2px dashed $line;
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+
+  .period {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+  }
+}
+
+.clientName {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  .muted {
+    font-size: 0.9375rem;
+    font-weight: 400;
+  }
+}
+
 .education {
   display: flex;
   flex-wrap: wrap;

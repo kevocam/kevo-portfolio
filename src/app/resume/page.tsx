@@ -10,7 +10,7 @@ import styles from './resume.module.scss';
 export const metadata: Metadata = {
   title: 'Resume',
   description:
-    'Resume of Kevin Camargo, Full Stack Engineer: 7+ years building web products, 4+ at Globant. Python, FastAPI, React, Next.js, TypeScript, testing and LLMs.',
+    'Resume of Kevin Camargo, Full Stack Engineer: 7+ years building web products for enterprise clients. React, Next.js, TypeScript, Python/FastAPI, Node.js and automated testing.',
   alternates: { canonical: '/resume' },
 };
 
@@ -65,12 +65,31 @@ export default function ResumePage() {
                   {job.meta ? ` · ${job.meta}` : ''}
                 </span>
               </div>
-              <ul className={styles.bullets}>
-                {job.bullets.map((b) => (
-                  <li key={b}>{b}</li>
-                ))}
-              </ul>
-              <p className={styles.tags}>{job.tags.join(' · ')}</p>
+              {job.note && <p className={styles.tags}>{job.note}</p>}
+              {job.bullets.length > 0 && (
+                <ul className={styles.bullets}>
+                  {job.bullets.map((b) => (
+                    <li key={b}>{b}</li>
+                  ))}
+                </ul>
+              )}
+              {job.tags.length > 0 && <p className={styles.tags}>{job.tags.join(' · ')}</p>}
+              {job.clients?.map((client) => (
+                <div key={client.name}>
+                  <div className={styles.jobTop}>
+                    <h4 className={styles.jobTitle}>
+                      {client.name} — {client.context}
+                    </h4>
+                    <span className={styles.jobMeta}>{client.period}</span>
+                  </div>
+                  <ul className={styles.bullets}>
+                    {client.bullets.map((b) => (
+                      <li key={b}>{b}</li>
+                    ))}
+                  </ul>
+                  <p className={styles.tags}>{client.tags.join(' · ')}</p>
+                </div>
+              ))}
             </article>
           ))}
         </section>

@@ -1,10 +1,23 @@
+export type ClientEngagement = {
+  name: string;
+  /** Industry and location, e.g. "Health insurance · Santiago, Chile". */
+  context: string;
+  period: string;
+  bullets: string[];
+  tags: string[];
+};
+
 export type Job = {
   role: string;
   company: string;
   period: string;
   meta?: string;
+  /** Short muted line under the role, e.g. a promotion. */
+  note?: string;
   bullets: string[];
   tags: string[];
+  /** Client engagements inside the same role (rendered nested). */
+  clients?: ClientEngagement[];
 };
 
 export const experience: Job[] = [
@@ -13,27 +26,51 @@ export const experience: Job[] = [
     company: 'Globant',
     period: 'Dec 2021 — Present',
     meta: 'Remote, Peru',
-    bullets: [
-      'Build large-scale platforms for enterprise clients in media, retail and healthcare.',
-      'Introduced automated testing into a microfrontend architecture (Module Federation): Jest unit tests and Playwright E2E tests, reducing production bugs by 95%.',
-      'The Skimm (media): built features on a Next.js platform backed by relational databases.',
-      'Salcobrand (retail): delivered full stack features with React, backend services and SQL.',
-      'Built Node.js REST APIs and set up repositories and tooling for new microfrontends.',
-      'Applied Spec-Driven Development and AI-assisted coding (Claude Code, Codex) in agile, distributed teams.',
+    note: 'Promoted from Frontend Engineer',
+    bullets: [],
+    tags: [],
+    clients: [
+      {
+        name: 'Consalud',
+        context: 'Health insurance (Isapre) · Santiago, Chile',
+        period: 'Feb 2023 — Present',
+        bullets: [
+          'Only Globant engineer in a ~15-person multinational team building the member self-service platform (MiGES, MiCAEC, MisPreventivos, MiCirugía) for 450K+ members.',
+          'Introduced unit (Jest) and E2E (Playwright) testing into repositories that had none, cutting bugs by ~95%.',
+          'Built shared components reused across microfrontends and led the mobile-first approach, now the team standard.',
+          'Integrated AI-assisted development (Claude, Codex) to speed up delivery while keeping code quality high.',
+        ],
+        tags: ['React', 'TypeScript', 'Module Federation', 'Jest', 'Playwright', 'Sass', 'Scrumban'],
+      },
+      {
+        name: 'Salcobrand',
+        context: 'Retail pharmacy · Santiago, Chile',
+        period: '7 months',
+        bullets: [
+          'Built a file management MVP (Google Drive-like) with a React frontend and Python/FastAPI backend services.',
+          'Proposed and implemented solutions that automated processes previously done manually.',
+        ],
+        tags: ['React', 'Python', 'FastAPI', 'Scrum'],
+      },
+      {
+        name: 'theSkimm',
+        context: 'Digital media · New York, USA',
+        period: '5 months',
+        bullets: [
+          'Improved SEO visibility by ~70% in 3 months through server-side rendering optimizations in Next.js.',
+          'Fixed rendering bugs affecting page performance and indexing.',
+        ],
+        tags: ['Next.js', 'React', 'GraphQL', 'Apollo', 'MongoDB', 'Contentful'],
+      },
     ],
-    tags: ['React', 'Next.js', 'TypeScript', 'Node.js', 'SQL', 'Module Federation', 'Jest', 'Playwright', 'Azure'],
   },
   {
     role: 'Frontend Developer',
     company: 'ID4 @IoT',
     period: 'Jun 2021 — Aug 2021',
     meta: 'Fintech',
-    bullets: [
-      'Improved application performance by 25% through coding best practices and migrating assets to Firebase.',
-      'Built client query features used daily by 100+ customers through the company API.',
-      'Cut development time by 30% with reusable components and templates.',
-    ],
-    tags: ['Vue.js', 'Nuxt.js', 'Vuex', 'React', 'Firebase'],
+    bullets: ['Improved app performance by ~25% and cut development time by ~30% with reusable components.'],
+    tags: ['Vue.js', 'Nuxt.js', 'Firebase'],
   },
   {
     role: 'Full Stack Developer',
@@ -41,21 +78,17 @@ export const experience: Job[] = [
     period: 'Jan 2021 — May 2021',
     meta: 'Events',
     bullets: [
-      'Built a virtual congress platform for an international event: 300+ attendees, 50+ speakers, 3 rooms, 15+ countries.',
-      'Developed real-time chat between attendees and speakers, plus an admin dashboard that made attendee management 70% more efficient.',
-      'Built a mobile-first frontend and landing pages for each sponsor.',
+      'Built a virtual congress platform (15+ countries, 300+ attendees) with real-time chat and an admin dashboard.',
     ],
-    tags: ['Laravel', 'PHP', 'Vue.js', 'MySQL', 'WebSockets', 'Tailwind CSS', 'Nginx'],
+    tags: ['Laravel', 'PHP', 'Vue.js', 'MySQL', 'WebSockets'],
   },
   {
     role: 'Co-founder & Full Stack Developer',
     company: 'Waliky TI',
     period: 'Feb 2019 — Dec 2020',
     bullets: [
-      'Co-founded a software studio building digital products for public and private organizations.',
-      'Built a custom edTech platform used daily by 50+ students (courses, exams, certificates).',
-      'Reduced website load times by 70% through performance optimization.',
+      'Built an edTech platform used daily by 50+ students and responsive client websites with ~70% faster load times.',
     ],
-    tags: ['Laravel', 'React', 'Vue.js', 'MySQL', 'WordPress', 'Google Maps API'],
+    tags: ['Laravel', 'React', 'Vue.js', 'MySQL'],
   },
 ];
