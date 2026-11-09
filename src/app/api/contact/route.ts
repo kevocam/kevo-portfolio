@@ -12,10 +12,10 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    const { data, error } = await supabase
+    // Sin .select(): con RLS, el rol público solo puede insertar.
+    const { error } = await supabase
       .from('contact_messages')
       .insert([{ name, email, message }])
-      .select()
 
     if (error) {
       console.error('Supabase error:', error)
@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
       )
     }
 
-    return NextResponse.json({ success: true, data })
+    return NextResponse.json({ success: true })
 
   } catch (error) {
     console.error('Contact API error:', error)

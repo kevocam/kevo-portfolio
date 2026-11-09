@@ -26,7 +26,7 @@ export type Project = {
   links: { live?: string; code?: string };
   /** Only filled fields render on /projects/[slug]. Never invent copy. */
   caseStudy?: CaseStudy;
-  /** TODO: 1600×1000 WebP in /public/projects/<slug>.webp */
+  /** 1600×1000 WebP in /public/projects/<slug>.webp */
   image?: string;
   imageAlt?: string;
 };
@@ -41,6 +41,8 @@ export const projects: Project[] = [
     tone: 'acid',
     featured: true,
     links: { live: 'https://candelariacentral.com' },
+    image: '/projects/candelaria-central.webp',
+    imageAlt: 'Candelaria Central: home con la máscara de la Virgen de la Candelaria y cuenta regresiva a Autóctonos y Traje de Luces',
     caseStudy: {
       seoTitle: 'Candelaria Central — Platform for the Festividad de la Candelaria',
       description:
