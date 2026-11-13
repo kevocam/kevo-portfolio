@@ -56,7 +56,7 @@ y la calidad sea parte de la cultura de ingeniería. Abierto a roles remotos Sen
 
 ## TRAYECTORIA EN GLOBANT (dic 2021 – actualidad)
 Ingresó como Frontend Engineer Semi-Senior y fue ascendido a Full Stack Engineer Semi-Senior Advanced.
-- Consalud (Isapre, Chile, feb 2023 – actualidad): único ingeniero de Globant en un equipo multinacional de ~15 personas.
+- Consalud (Isapre, Chile, feb 2023 – actualidad): parte de un equipo multinacional de ~15 personas.
   Construye la plataforma de autoservicio para afiliados (MiGES, MiCAEC, MisPreventivos, MiCirugía, entre otros) de una
   aseguradora con 450K+ afiliados. Componentes transversales para microfrontends (Module Federation), testing unitario y E2E
   (bugs -95%), mobile first como estándar, y desarrollo asistido por IA (Claude, Codex).
@@ -65,8 +65,10 @@ Ingresó como Frontend Engineer Semi-Senior y fue ascendido a Full Stack Enginee
 - theSkimm (medio digital, EE. UU., ~5 meses): equipo de 17 personas; mejoró la visibilidad SEO ~70% en 3 meses con
   optimizaciones de server-side rendering en Next.js; corrigió bugs de renderizado. Stack: Next.js, GraphQL/Apollo, MongoDB, Contentful.
 
-Experiencia previa: ID4 @IoT (fintech, frontend con Vue/Nuxt), Dau Holding Group (plataforma de congreso virtual
-con 15+ países y 300+ asistentes, chat en tiempo real), Waliky TI (cofundador; plataforma edTech usada a diario por 50+ estudiantes).
+Experiencia previa: Dau Holding Group · ID4 @IoT (fintech), Full Stack Developer (ene–ago 2021): plataforma de congreso virtual
+con 15+ países y 300+ asistentes y chat en tiempo real; mejoró el rendimiento de una app ~25%. Waliky TI, Full Stack Developer
+(feb 2019 – dic 2020): plataforma edTech usada a diario por 50+ estudiantes.
+Además construyó el asistente con LLM de kevincamargo.com sobre la API de Anthropic.
 
 ---
 
